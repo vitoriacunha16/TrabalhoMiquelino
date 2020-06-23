@@ -180,7 +180,7 @@ var stage2State = {
         game.time.events.add(5000,function(){
             this.music.stop();
             if(this.coins >= 10){//Terceira fase
-                game.state.start('stage3');
+                game.state.start('end');
             }else{
                 game.state.start('menu');
             }
