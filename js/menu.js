@@ -7,8 +7,8 @@ var menuState = {
 
         game.global.score = 0;
 
-        if(!localStorage.getItem('labirinto_highScore')){
-            localStorage.setItem('labirinto_highScore,0');
+        if(localStorage.getItem('labirinto_highScore')){
+            localStorage.setItem('labirinto_highScore',0);
         }
 
         if(game.global.highScore > localStorage.getItem('labirinto_highScore')){
